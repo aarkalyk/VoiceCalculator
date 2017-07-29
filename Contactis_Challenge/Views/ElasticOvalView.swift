@@ -176,6 +176,7 @@ class ElasticOvalView: UIView {
         let sideHeight = controlHeight - Sizes.controlAndSidePointDifference
         UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1.5, options: UIViewAnimationOptions.allowAnimatedContent, animations: {
             self.controlPointView.center.y = controlHeight + y
+            self.controlPointView.center.x = self.frame.midX
             self.leftPointView.center.y = !self.isExpanded ? (sideHeight + y) : sideHeight
             self.rightPointView.center.y = !self.isExpanded ? (sideHeight + y) : sideHeight
         }) { (_) in

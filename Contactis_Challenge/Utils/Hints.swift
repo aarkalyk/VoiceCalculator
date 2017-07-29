@@ -19,11 +19,12 @@ enum Sizes{
 }
 
 struct Hints {
-    static let recordInstructionText = "Press the record button below and tell me your problem"
-    static let stopInstructionText = "Press the stop button below when you're done"
-    static let errorInstructionText = "Please speak loudly and CLEARLY\nOkay? :)"
-    static let expressionPlaceHolderText = "Make sure it's a hard one"
-    static let expressionRecordingText = "Listening carefully..."
-    static let computingText = "Give me sec..!"
-    static let errorText = "Couldn't hear you :("
+    static let recordInstructionText = "Press the record button below and tell me an arithmetic problem 👇🏻"
+    static let stopInstructionText = "Just release your finger when you're done ☝️"
+    static let errorInstructionText = "Please speak loudly and CLEARLY, okay?😉"
+    static let expressionPlaceHolderText = "Make sure it's a hard one 😎"
+    static let expressionRecordingText = "Listening carefully...👂"
+    static let computingText = "Computing 🔥"
+    static let computingInstructionText = "Give me sec 🤔"
+    static let errorText = "Couldn't hear you 😔"
 }

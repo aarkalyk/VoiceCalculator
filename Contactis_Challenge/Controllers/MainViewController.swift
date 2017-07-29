@@ -10,7 +10,7 @@ import Speech
 import UIKit
 import Neon
 
-class MainViewController: UIViewController, SFSpeechRecognizerDelegate {
+class MainViewController: UIViewController {
     //MARK: - Properties
     private lazy var elasticOvalView : ElasticOvalView = {
         let view = ElasticOvalView()
@@ -21,7 +21,9 @@ class MainViewController: UIViewController, SFSpeechRecognizerDelegate {
     private lazy var recordButton : RecordButton = {
         let button = RecordButton()
         button.setImage(#imageLiteral(resourceName: "mic"), for: .normal)
-        button.addTarget(self, action: #selector(recordButtonTapped), for: .touchDown)
+        button.addTarget(self, action: #selector(recordButtonPressed), for: .touchDown)
+        button.addTarget(self, action: #selector(recordButtonReleased), for: .touchUpInside)
+        button.addTarget(self, action: #selector(recordButtonReleased), for: .touchUpOutside)
         return button
     }()
     
@@ -47,7 +49,7 @@ class MainViewController: UIViewController, SFSpeechRecognizerDelegate {
     private func setup(){
         self.view.backgroundColor = .white
         
-        SFSpeechRecognizer.requestAuthorization { (authStatus) in  //4
+        SFSpeechRecognizer.requestAuthorization { (authStatus) in
             
             var isButtonEnabled = false
             
@@ -72,7 +74,6 @@ class MainViewController: UIViewController, SFSpeechRecognizerDelegate {
                 self.recordButton.isEnabled = isButtonEnabled
             }
         }
-        MySpeechRecognizer.shared.speechRecognizer?.delegate = self
         
         setupSubviews()
     }
@@ -95,28 +96,25 @@ class MainViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     //MARK: - Button actions
-    func recordButtonTapped(){
-        if MySpeechRecognizer.shared.audioEngine.isRunning {
-            elasticOvalView.expressionText = Hints.computingText
-            instructionsLabel.text = Hints.stopInstructionText
-            showInstructions()
-            recordButton.setImage(#imageLiteral(resourceName: "mic"), for: .normal)
-            MySpeechRecognizer.shared.audioEngine.stop()
-            MySpeechRecognizer.shared.recognitionRequest?.endAudio()
-        } else {
-            startRecording()
-            showInstructions()
-            instructionsLabel.text = Hints.recordInstructionText
-            recordButton.setImage(#imageLiteral(resourceName: "stop"), for: .normal)
-            elasticOvalView.compressView()
-            elasticOvalView.expressionText = Hints.expressionRecordingText
-        }
+    func recordButtonPressed(){
+        startRecording()
+        showInstructions()
+        instructionsLabel.text = Hints.stopInstructionText
+        elasticOvalView.compressView()
+        elasticOvalView.expressionText = Hints.expressionRecordingText
+    }
+    
+    func recordButtonReleased(){
+        elasticOvalView.expressionText = Hints.computingText
+        instructionsLabel.text = Hints.computingInstructionText
+        showInstructions()
+        stopRecording()
     }
     
     //MARK: - Speech recognition
     private func startRecording(){
         MySpeechRecognizer.shared.startRecordingWith { (expressionString) in
-            DispatchQueue.main.async {
+            OperationQueue.main.addOperation() {
                 if let expression = expressionString{
                     self.elasticOvalView.expressionText = "\(expression) = "
                     self.elasticOvalView.resultText = "\(self.calculator.calculate(inputString: expression))"
@@ -126,11 +124,15 @@ class MainViewController: UIViewController, SFSpeechRecognizerDelegate {
                     self.elasticOvalView.compressView()
                     self.elasticOvalView.expressionText = Hints.errorText
                     self.instructionsLabel.text = Hints.errorInstructionText
-                    self.recordButton.setImage(#imageLiteral(resourceName: "mic"), for: .normal)
                     self.showInstructions()
                 }
             }
         }
+    }
+    
+    private func stopRecording(){
+        MySpeechRecognizer.shared.audioEngine.stop()
+        MySpeechRecognizer.shared.recognitionRequest?.endAudio()
     }
     
     //MARK: - Helper methods
