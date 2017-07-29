@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032F907F1CA1C782C8DE9F9ED88F8B83 /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D8602313E240BD5668CDD21DF4EA6 /* NeonAnchorable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19C8917341D61A2721547E26CB877D61 /* Pods-Contactis_Challenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D83D5B6800F22A85A489FDF97282543A /* Pods-Contactis_Challenge-dummy.m */; };
+		1BF4F90F32F7CED3ED98D0DD5FE79CBA /* Neon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C73E55B09A88933D78A04543A2BB4A /* Neon-dummy.m */; };
+		6346F10DB4D724ECA9AD25864FA91B60 /* NeonGroupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9C37C00C5E7AD69DDBBD08DDD4D35 /* NeonGroupable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7649EDFA60F7DF739C8091CAD3EF7CDE /* Pods-Contactis_Challenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E8710A6973457B9074ACA0DEA06D9F /* Pods-Contactis_Challenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E1E24CC28909C77AB872B48901AC5E4 /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCDD1F20CCA040F3847973CDF1C02 /* Neon.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AF26152032EA4FA010A442DAD0ABD5A8 /* NeonFrameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3496725398A5546287AC024D1128565 /* NeonFrameable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C2BC6EDD48DC103B884508405BC9E7E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C7767DD0ADAE389FB6249146EF3ECBA0 /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA5593C4BF3D1652A2C359FC5FC59D /* NeonExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C9AC8394DFA9A71B00D7E5E9A6DF4349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CDC15BA58FFB84EEB2E364CCA6103908 /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE476622B285A8A4A3FF71761D25DA /* NeonAlignable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F1F012646B4F0C5E34D3769CE1FBB5FE /* Neon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE441340EEFDAA1AD295BA216C75CBCB /* Neon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17DFE55FD0714589F256CAB864042EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF630AB9720279E0A1F904F21F31CF0B;
+			remoteInfo = Neon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D59ECC5FEC02AE3D561CD5A04352FE1 /* Pods-Contactis_Challenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Contactis_Challenge-resources.sh"; sourceTree = "<group>"; };
+		3462B467A614D03E2F910A1FDDE522EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37EE476622B285A8A4A3FF71761D25DA /* NeonAlignable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonAlignable.swift; path = Source/NeonAlignable.swift; sourceTree = "<group>"; };
+		41E8710A6973457B9074ACA0DEA06D9F /* Pods-Contactis_Challenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Contactis_Challenge-umbrella.h"; sourceTree = "<group>"; };
+		4D4D8602313E240BD5668CDD21DF4EA6 /* NeonAnchorable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonAnchorable.swift; path = Source/NeonAnchorable.swift; sourceTree = "<group>"; };
+		529A36F3939495602B2E7D8724DEAB06 /* Pods_Contactis_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contactis_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DBCDFE77F2ADFDEA4C25379829B1BD7 /* Pods-Contactis_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contactis_Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		7AEF1934EF5187CFA6824B21C63B2D7B /* Neon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Neon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8197ADC468D5D4D24EB5DFF2994DE1E1 /* Pods-Contactis_Challenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Contactis_Challenge-frameworks.sh"; sourceTree = "<group>"; };
+		90FA488A00F97903C9CE15ACA403396E /* Neon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neon-prefix.pch"; sourceTree = "<group>"; };
+		91BBE5269A8689F5D52C5007D8C19DE2 /* Pods-Contactis_Challenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Contactis_Challenge.modulemap"; sourceTree = "<group>"; };
+		924AFB9B0A31FCBE7C051E10001C258B /* Neon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Neon.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
+		A0E9C37C00C5E7AD69DDBBD08DDD4D35 /* NeonGroupable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonGroupable.swift; path = Source/NeonGroupable.swift; sourceTree = "<group>"; };
+		A145408C1B18C2A2307F246E6A682D4E /* Pods-Contactis_Challenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Contactis_Challenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7DA5593C4BF3D1652A2C359FC5FC59D /* NeonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonExtensions.swift; path = Source/NeonExtensions.swift; sourceTree = "<group>"; };
+		ACEFCDD1F20CCA040F3847973CDF1C02 /* Neon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Neon.swift; path = Source/Neon.swift; sourceTree = "<group>"; };
+		B3496725398A5546287AC024D1128565 /* NeonFrameable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonFrameable.swift; path = Source/NeonFrameable.swift; sourceTree = "<group>"; };
+		BAAFFBD862EE7D8C2A72F5A88231370D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB254F5BC3078709BE96E06B0A70F280 /* Neon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Neon.xcconfig; sourceTree = "<group>"; };
+		CE441340EEFDAA1AD295BA216C75CBCB /* Neon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neon-umbrella.h"; sourceTree = "<group>"; };
+		D83D5B6800F22A85A489FDF97282543A /* Pods-Contactis_Challenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Contactis_Challenge-dummy.m"; sourceTree = "<group>"; };
+		E1C73E55B09A88933D78A04543A2BB4A /* Neon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Neon-dummy.m"; sourceTree = "<group>"; };
+		EBA7D4028B50939A66360FAB7DE2E4D6 /* Pods-Contactis_Challenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Contactis_Challenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE1299078343E863DC704D20B9A58FCD /* Pods-Contactis_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contactis_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		029BB31AD121B8C8EE5065289983A437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AC8394DFA9A71B00D7E5E9A6DF4349 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B95E085D9A4E572EC7E7F147DD916736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BC6EDD48DC103B884508405BC9E7E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06E4966A1DBBD3F7777607E85BEF2FCB /* Pods-Contactis_Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				BAAFFBD862EE7D8C2A72F5A88231370D /* Info.plist */,
+				91BBE5269A8689F5D52C5007D8C19DE2 /* Pods-Contactis_Challenge.modulemap */,
+				A145408C1B18C2A2307F246E6A682D4E /* Pods-Contactis_Challenge-acknowledgements.markdown */,
+				EBA7D4028B50939A66360FAB7DE2E4D6 /* Pods-Contactis_Challenge-acknowledgements.plist */,
+				D83D5B6800F22A85A489FDF97282543A /* Pods-Contactis_Challenge-dummy.m */,
+				8197ADC468D5D4D24EB5DFF2994DE1E1 /* Pods-Contactis_Challenge-frameworks.sh */,
+				0D59ECC5FEC02AE3D561CD5A04352FE1 /* Pods-Contactis_Challenge-resources.sh */,
+				41E8710A6973457B9074ACA0DEA06D9F /* Pods-Contactis_Challenge-umbrella.h */,
+				EE1299078343E863DC704D20B9A58FCD /* Pods-Contactis_Challenge.debug.xcconfig */,
+				6DBCDFE77F2ADFDEA4C25379829B1BD7 /* Pods-Contactis_Challenge.release.xcconfig */,
+			);
+			name = "Pods-Contactis_Challenge";
+			path = "Target Support Files/Pods-Contactis_Challenge";
+			sourceTree = "<group>";
+		};
+		0889A4A53D753747E322199294754B38 /* Neon */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFCDD1F20CCA040F3847973CDF1C02 /* Neon.swift */,
+				37EE476622B285A8A4A3FF71761D25DA /* NeonAlignable.swift */,
+				4D4D8602313E240BD5668CDD21DF4EA6 /* NeonAnchorable.swift */,
+				A7DA5593C4BF3D1652A2C359FC5FC59D /* NeonExtensions.swift */,
+				B3496725398A5546287AC024D1128565 /* NeonFrameable.swift */,
+				A0E9C37C00C5E7AD69DDBBD08DDD4D35 /* NeonGroupable.swift */,
+				ADB1465D31A303614BD19045F099A8D3 /* Support Files */,
+			);
+			path = Neon;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C3A2F7BB8E9813E48AAFCC5B076EE70D /* Pods */,
+				80EAB5616A3B32607DB31DDE2F34C93B /* Products */,
+				FAD8D7D9B34320FFD90A90129220D636 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80EAB5616A3B32607DB31DDE2F34C93B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AEF1934EF5187CFA6824B21C63B2D7B /* Neon.framework */,
+				529A36F3939495602B2E7D8724DEAB06 /* Pods_Contactis_Challenge.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADB1465D31A303614BD19045F099A8D3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3462B467A614D03E2F910A1FDDE522EE /* Info.plist */,
+				924AFB9B0A31FCBE7C051E10001C258B /* Neon.modulemap */,
+				CB254F5BC3078709BE96E06B0A70F280 /* Neon.xcconfig */,
+				E1C73E55B09A88933D78A04543A2BB4A /* Neon-dummy.m */,
+				90FA488A00F97903C9CE15ACA403396E /* Neon-prefix.pch */,
+				CE441340EEFDAA1AD295BA216C75CBCB /* Neon-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Neon";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3A2F7BB8E9813E48AAFCC5B076EE70D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0889A4A53D753747E322199294754B38 /* Neon */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FAD8D7D9B34320FFD90A90129220D636 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06E4966A1DBBD3F7777607E85BEF2FCB /* Pods-Contactis_Challenge */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B260E10B10BB0C1F014E068A7D65397 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F012646B4F0C5E34D3769CE1FBB5FE /* Neon-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19D6C245054CB6C865832477139374E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7649EDFA60F7DF739C8091CAD3EF7CDE /* Pods-Contactis_Challenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6F300566BAAA9907075FFF23592D60BB /* Pods-Contactis_Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A85DA8977E9EAA06ADDA6881942D999D /* Build configuration list for PBXNativeTarget "Pods-Contactis_Challenge" */;
+			buildPhases = (
+				08183E3B0775C70F41C754E2355F58FB /* Sources */,
+				B95E085D9A4E572EC7E7F147DD916736 /* Frameworks */,
+				A19D6C245054CB6C865832477139374E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A84FFCEB3CCC37C75578D0CD4A1B1EAD /* PBXTargetDependency */,
+			);
+			name = "Pods-Contactis_Challenge";
+			productName = "Pods-Contactis_Challenge";
+			productReference = 529A36F3939495602B2E7D8724DEAB06 /* Pods_Contactis_Challenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF630AB9720279E0A1F904F21F31CF0B /* Neon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7B825CE431728C33D24385A3E090CE /* Build configuration list for PBXNativeTarget "Neon" */;
+			buildPhases = (
+				FB4258405FC5BE706BB6791A285E4149 /* Sources */,
+				029BB31AD121B8C8EE5065289983A437 /* Frameworks */,
+				0B260E10B10BB0C1F014E068A7D65397 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neon;
+			productName = Neon;
+			productReference = 7AEF1934EF5187CFA6824B21C63B2D7B /* Neon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 80EAB5616A3B32607DB31DDE2F34C93B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF630AB9720279E0A1F904F21F31CF0B /* Neon */,
+				6F300566BAAA9907075FFF23592D60BB /* Pods-Contactis_Challenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08183E3B0775C70F41C754E2355F58FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C8917341D61A2721547E26CB877D61 /* Pods-Contactis_Challenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4258405FC5BE706BB6791A285E4149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF4F90F32F7CED3ED98D0DD5FE79CBA /* Neon-dummy.m in Sources */,
+				8E1E24CC28909C77AB872B48901AC5E4 /* Neon.swift in Sources */,
+				CDC15BA58FFB84EEB2E364CCA6103908 /* NeonAlignable.swift in Sources */,
+				032F907F1CA1C782C8DE9F9ED88F8B83 /* NeonAnchorable.swift in Sources */,
+				C7767DD0ADAE389FB6249146EF3ECBA0 /* NeonExtensions.swift in Sources */,
+				AF26152032EA4FA010A442DAD0ABD5A8 /* NeonFrameable.swift in Sources */,
+				6346F10DB4D724ECA9AD25864FA91B60 /* NeonGroupable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A84FFCEB3CCC37C75578D0CD4A1B1EAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Neon;
+			target = EF630AB9720279E0A1F904F21F31CF0B /* Neon */;
+			targetProxy = 17DFE55FD0714589F256CAB864042EFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2620F129367D5CDE7A7D37833B2A0C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1299078343E863DC704D20B9A58FCD /* Pods-Contactis_Challenge.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Contactis_Challenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contactis_Challenge/Pods-Contactis_Challenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Contactis_Challenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8E4C96F3FF4BC9FA14F194773CE6C0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB254F5BC3078709BE96E06B0A70F280 /* Neon.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Neon/Neon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Neon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Neon/Neon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Neon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		909FE41E42F00F3F5D148CC5B1C32CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB254F5BC3078709BE96E06B0A70F280 /* Neon.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Neon/Neon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Neon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Neon/Neon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Neon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6EB94418A052D78BE78AF15D2800464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBCDFE77F2ADFDEA4C25379829B1BD7 /* Pods-Contactis_Challenge.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Contactis_Challenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contactis_Challenge/Pods-Contactis_Challenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Contactis_Challenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A7B825CE431728C33D24385A3E090CE /* Build configuration list for PBXNativeTarget "Neon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				909FE41E42F00F3F5D148CC5B1C32CBB /* Debug */,
+				8E4C96F3FF4BC9FA14F194773CE6C0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A85DA8977E9EAA06ADDA6881942D999D /* Build configuration list for PBXNativeTarget "Pods-Contactis_Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2620F129367D5CDE7A7D37833B2A0C0F /* Debug */,
+				E6EB94418A052D78BE78AF15D2800464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

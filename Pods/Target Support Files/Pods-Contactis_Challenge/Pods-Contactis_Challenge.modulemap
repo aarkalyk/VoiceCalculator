@@ -1,0 +1,6 @@
+framework module Pods_Contactis_Challenge {
+  umbrella header "Pods-Contactis_Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
