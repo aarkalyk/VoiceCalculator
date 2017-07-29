@@ -109,6 +109,7 @@ class MainViewController: UIViewController {
         instructionsLabel.text = Hints.computingInstructionText
         showInstructions()
         stopRecording()
+        self.recordButton.isEnabled = false
     }
     
     //MARK: - Speech recognition
@@ -126,6 +127,7 @@ class MainViewController: UIViewController {
                     self.instructionsLabel.text = Hints.errorInstructionText
                     self.showInstructions()
                 }
+                self.recordButton.isEnabled = true
             }
         }
     }
