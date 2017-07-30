@@ -21,6 +21,7 @@
 		08E47BF61F2D418E008F2D4A /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E47BF51F2D418E008F2D4A /* RecordButton.swift */; };
 		08E47BF91F2D48B2008F2D4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E47BF81F2D48B2008F2D4A /* MainViewController.swift */; };
 		08E47BFB1F2D4A56008F2D4A /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E47BFA1F2D4A56008F2D4A /* Calculator.swift */; };
+		08E47BFD1F2DED35008F2D4A /* ElasticOvalViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E47BFC1F2DED35008F2D4A /* ElasticOvalViewExtension.swift */; };
 		55AF430320309E607B37B521 /* Pods_Contactis_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9452E3657B9EE25EC80345B6 /* Pods_Contactis_Challenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		08E47BF51F2D418E008F2D4A /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordButton.swift; path = Views/RecordButton.swift; sourceTree = "<group>"; };
 		08E47BF81F2D48B2008F2D4A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		08E47BFA1F2D4A56008F2D4A /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Calculator.swift; path = Models/Calculator.swift; sourceTree = "<group>"; };
+		08E47BFC1F2DED35008F2D4A /* ElasticOvalViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElasticOvalViewExtension.swift; path = Views/ElasticOvalViewExtension.swift; sourceTree = "<group>"; };
 		9452E3657B9EE25EC80345B6 /* Pods_Contactis_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contactis_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E818441A8F69C779CFAEF4 /* Pods-Contactis_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contactis_Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Contactis_Challenge/Pods-Contactis_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		FDA66D727F65715C22628CD1 /* Pods-Contactis_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contactis_Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Contactis_Challenge/Pods-Contactis_Challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,8 +164,8 @@
 		08819A201F2CDA9300714664 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				08819A211F2CDAAD00714664 /* ElasticOvalView.swift */,
 				08E47BF51F2D418E008F2D4A /* RecordButton.swift */,
+				08E47BFE1F2DED3E008F2D4A /* ElasticOvalView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -191,6 +193,15 @@
 				08E47BF81F2D48B2008F2D4A /* MainViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		08E47BFE1F2DED3E008F2D4A /* ElasticOvalView */ = {
+			isa = PBXGroup;
+			children = (
+				08819A211F2CDAAD00714664 /* ElasticOvalView.swift */,
+				08E47BFC1F2DED35008F2D4A /* ElasticOvalViewExtension.swift */,
+			);
+			name = ElasticOvalView;
 			sourceTree = "<group>";
 		};
 		E4B19AE1228C503036AD55D4 /* Frameworks */ = {
@@ -398,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E47BFD1F2DED35008F2D4A /* ElasticOvalViewExtension.swift in Sources */,
 				08E47BF21F2D24C4008F2D4A /* UIFontExtention.swift in Sources */,
 				08E47BF91F2D48B2008F2D4A /* MainViewController.swift in Sources */,
 				08819A251F2CDB5900714664 /* UIColorExtension.swift in Sources */,

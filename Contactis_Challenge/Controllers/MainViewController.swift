@@ -49,39 +49,13 @@ class MainViewController: UIViewController {
     //MARK: - Initial setup
     private func setup(){
         self.view.backgroundColor = .white
-        
-        SFSpeechRecognizer.requestAuthorization { (authStatus) in
-            
-            var isButtonEnabled = false
-            
-            switch authStatus {  //5
-            case .authorized:
-                isButtonEnabled = true
-                
-            case .denied:
-                isButtonEnabled = false
-                print("User denied access to speech recognition")
-                
-            case .restricted:
-                isButtonEnabled = false
-                print("Speech recognition restricted on this device")
-                
-            case .notDetermined:
-                isButtonEnabled = false
-                print("Speech recognition not yet authorized")
-            }
-            
-            OperationQueue.main.addOperation() {
-                self.recordButton.isEnabled = isButtonEnabled
-            }
-        }
-        
+        requestAccess()
         setupSubviews()
     }
     
     private func setupSubviews(){
-        view.addSubview(elasticOvalView)
         view.addSubview(instructionsLabel)
+        view.addSubview(elasticOvalView)
         view.addSubview(recordButton)
         updateViewConstraints()
     }
@@ -119,7 +93,7 @@ class MainViewController: UIViewController {
             OperationQueue.main.addOperation() {
                 if let expression = expressionString{
                     self.elasticOvalView.expressionText = "\(expression) = "
-                    self.elasticOvalView.resultText = "\(self.calculator.calculate(inputString: expression))"
+                    self.elasticOvalView.resultText = self.calculator.calculate(inputString: expression)
                     self.elasticOvalView.expandView()
                     self.hideInstructions()
                 }else{
@@ -136,6 +110,17 @@ class MainViewController: UIViewController {
     private func stopRecording(){
         MySpeechRecognizer.shared.audioEngine.stop()
         MySpeechRecognizer.shared.recognitionRequest?.endAudio()
+    }
+    
+    func requestAccess(){
+        SFSpeechRecognizer.requestAuthorization { (authStatus) in
+            switch authStatus {
+            case .authorized: break
+            case .denied: print("User denied access to speech recognition")
+            case .restricted: print("Speech recognition restricted on this device")
+            case .notDetermined: print("Speech recognition not yet authorized")
+            }
+        }
     }
     
     //MARK: - Helper methods

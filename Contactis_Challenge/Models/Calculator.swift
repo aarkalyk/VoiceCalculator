@@ -37,12 +37,12 @@ class Calculator {
         return mutableOperands
     }
     
-    func calculate(inputString : String) -> Double{
+    func calculate(inputString : String) -> String{
         var operands : [Double] = []
         var operations : [String] = []
         var characters = arrayFrom(string: inputString)
         characters = characters.filter { isStringNumber(operandString: $0) || isOperation(symbol: $0) || $0 == "."}
-        characters = findDoubles(array: characters)
+        characters = parseNumbersAndOperationsFrom(array: characters)
         
         for var i in (0..<characters.count) {
             if isOperation(symbol: characters[i]) {
@@ -66,12 +66,13 @@ class Calculator {
             operands = process(operands: operands, operation: operations.popLast()!)
         }
         
-        return !operands.isEmpty ? operands.popLast()! : 0.0
+        let result = !operands.isEmpty ? operands.popLast()! : 0.0
+        return spellNumber(number: result)
     }
     
     //MARK: - Helper methods
-    private func findDoubles(array : [String]) -> [String]{
-        var arrayWithDoubles = [String]()
+    private func parseNumbersAndOperationsFrom(array : [String]) -> [String]{
+        var parsedArray = [String]()
         var i = 0
         while i < array.count {
             if i != array.count-1 && isStringNumber(operandString: array[i]) && (isStringNumber(operandString: array[i+1]) || array[i+1] == "." ){
@@ -80,16 +81,16 @@ class Calculator {
                     firstNumber += array[i+1]
                     i+=1
                 }
-                arrayWithDoubles.append(firstNumber)
+                parsedArray.append(firstNumber)
                 if i == array.count-1 {
                     break
                 }
             }else{
-                arrayWithDoubles.append(array[i])
+                parsedArray.append(array[i])
             }
             i += 1
         }
-        return arrayWithDoubles
+        return parsedArray
     }
     
     private func arrayFrom(string : String) -> [String]{
@@ -98,6 +99,15 @@ class Calculator {
             array.append("\(character)")
         }
         return array
+    }
+    
+    private func spellNumber(number : Double) -> String{
+        let numberValue = NSNumber(value: number)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .spellOut
+        formatter.locale = Locale(identifier: Locale.current.identifier)
+        let spelledNumber = formatter.string(from: numberValue)
+        return spelledNumber!
     }
 }
 
