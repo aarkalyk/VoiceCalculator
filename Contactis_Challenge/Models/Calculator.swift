@@ -11,11 +11,11 @@ import Foundation
 class Calculator {
     //MARK: - Algorithm
     private func isOperation(symbol : String) -> Bool{
-        return symbol == "+" || symbol == "-" || symbol == "×"
+        return symbol == "+" || symbol == "-" || symbol == "×" || symbol == "÷"
     }
     
     private func priorityFor(operation : String) -> Int{
-        return operation == "+" || operation == "-" ? 1 : operation == "×" ? 2 : -1
+        return operation == "+" || operation == "-" ? 1 : operation == "×" || operation == "÷" ? 2 : -1
     }
     
     private func isStringNumber(operandString : String) -> Bool{
@@ -28,9 +28,10 @@ class Calculator {
         let l = !mutableOperands.isEmpty ? mutableOperands.popLast()! : 0
         
         switch operation {
-        case "+": mutableOperands.append(l+r); break
-        case "-": mutableOperands.append(l-r); break
-        case "×": mutableOperands.append(l*r); break
+        case "+": mutableOperands.append(l+r)
+        case "-": mutableOperands.append(l-r)
+        case "×": mutableOperands.append(l*r)
+        case "÷": mutableOperands.append(l/r)
         default: break
         }
         
