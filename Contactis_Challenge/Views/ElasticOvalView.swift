@@ -9,8 +9,14 @@
 import UIKit
 import Neon
 
+protocol ElasticOvalViewDelegate: AnyObject {
+    func didCollapse(elasticView: ElasticOvalView)
+}
+
 class ElasticOvalView: UIView {
     //MARK: - Properties
+    weak var delegate: ElasticOvalViewDelegate?
+    
     private lazy var elasticShapeLayer : CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.fillColor = UIColor.customPink.cgColor
@@ -141,9 +147,7 @@ class ElasticOvalView: UIView {
         controlPointView.center.x += translation.x
         controlPointView.center.y += translation.y
         pan.setTranslation(.zero, in: self)
-        if pan.state == .ended && isExpanded{
-            expandView()
-        }else if pan.state == .ended{
+        if pan.state == .ended{
             compressView()
         }
     }
@@ -159,6 +163,11 @@ class ElasticOvalView: UIView {
             UIView.animate(withDuration: 0.45, delay: 0.0, usingSpringWithDamping: 0.15, initialSpringVelocity: 5.5, options: UIViewAnimationOptions.allowAnimatedContent, animations: {
                 self.positionControlPoint()
             }, completion: { (_) in
+                if self.isExpanded{
+                    if let delegate = self.delegate{
+                        delegate.didCollapse(elasticView: self)
+                    }
+                }
                 self.isExpanded = false
                 self.stopBouncing()
                 self.isUserInteractionEnabled = true

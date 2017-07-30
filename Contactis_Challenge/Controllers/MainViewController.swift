@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
     private lazy var elasticOvalView : ElasticOvalView = {
         let view = ElasticOvalView()
         view.expressionText = Hints.expressionPlaceHolderText
+        view.delegate = self
         return view
     }()
     
@@ -27,7 +28,7 @@ class MainViewController: UIViewController {
         return button
     }()
     
-    private lazy var instructionsLabel : UILabel = {
+    lazy var instructionsLabel : UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
         label.text = Hints.recordInstructionText
@@ -138,15 +139,24 @@ class MainViewController: UIViewController {
     }
     
     //MARK: - Helper methods
-    private func hideInstructions(){
+    func hideInstructions(){
         UIView.animate(withDuration: 0.3) {
             self.instructionsLabel.alpha = 0
         }
     }
     
-    private func showInstructions(){
+    func showInstructions(){
         UIView.animate(withDuration: 0.3) {
             self.instructionsLabel.alpha = 1.0
         }
+    }
+}
+
+//MARK: - ElasticOvalView delegate
+extension MainViewController: ElasticOvalViewDelegate{
+    func didCollapse(elasticView: ElasticOvalView) {
+        elasticView.expressionText = Hints.expressionPlaceHolderText
+        instructionsLabel.text = Hints.recordInstructionText
+        showInstructions()
     }
 }
