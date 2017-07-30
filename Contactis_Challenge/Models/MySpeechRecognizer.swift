@@ -56,8 +56,8 @@ class MySpeechRecognizer{
             if result != nil {
                 isFinal = (result?.isFinal)!
                 if isFinal {
-                    var resultString = (result?.bestTranscription.formattedString)!
-                    resultString = resultString.replacingOccurrences(of: "One", with: "1") //Work around a weird bug
+                    var resultString = (result?.bestTranscription.formattedString)!.lowercased()
+                    resultString = resultString.replacingOccurrences(of: "one", with: "1") //Work around a weird bug
                     closure(resultString)
                 }
             }else{
