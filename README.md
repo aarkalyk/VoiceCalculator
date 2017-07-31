@@ -13,4 +13,4 @@ Expression evaluation was implemented using Reverse Polish Notation.
 - ➖ subtraction 
 - ➕ addition 
 
-The UI was inspired by the flag of Poland 🇵🇱 as a tribute to the origin of Notation 😉
+The UI was inspired by flag of Poland 🇵🇱 as a tribute to the origin of the Notation 😉
