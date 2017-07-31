@@ -93,7 +93,7 @@ class MainViewController: UIViewController {
     //MARK: - Speech recognition
     private func startRecording(){
         MySpeechRecognizer.shared.startRecordingWith { (expressionString) in
-            OperationQueue.main.addOperation() {
+            OperationQueue.main.addOperation() { [unowned self] in
                 if let expression = expressionString{
                     self.elasticOvalView.expressionText = "\(expression) = "
                     self.elasticOvalView.resultText = self.calculator.calculate(inputString: expression)
