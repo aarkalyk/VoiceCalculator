@@ -1,5 +1,5 @@
 ## VoiceCalculator  
-VoiceCalculator is a simple iOS app that evaluates simple mathematical expressions provided by voice.
+VoiceCalculator is an iOS app that evaluates simple mathematical expressions provided by voice.
 
 The app was written in Swift 3.0.
 
@@ -13,4 +13,4 @@ Expression evaluation was implemented using Reverse Polish Notation.
 - ➖ subtraction 
 - ➕ addition 
 
-The UI was inspired by the flag of Poland 🇵🇱
+The UI was inspired by the flag of Poland 🇵🇱 as a tribute to the origin of Notation 😉
