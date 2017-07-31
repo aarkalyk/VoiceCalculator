@@ -45,24 +45,20 @@ class Calculator {
         characters = characters.filter { isStringNumber(operandString: $0) || isOperation(symbol: $0) || $0 == "."}
         characters = parseNumbersAndOperationsFrom(array: characters)
         
-        for var i in (0..<characters.count) {
-            if isOperation(symbol: characters[i]) {
-                let currentOperation = characters[i]
-                while !operations.isEmpty && priorityFor(operation: operations.last!) >= priorityFor(operation: characters[i]){
+        for character in characters{
+            if isOperation(symbol: character) {
+                let currentOperation = character
+                while !operations.isEmpty && priorityFor(operation: operations.last!) >= priorityFor(operation: character){
                     operands = process(operands: operands, operation: operations.popLast()!)
                 }
                 operations.append(currentOperation)
             }else{
-                var operandString : String = ""
-                while i < characters.count && isStringNumber(operandString: characters[i]){
-                    operandString += characters[i]
-                    i += 1
-                }
-                if isStringNumber(operandString: operandString){
-                    operands.append(Double(operandString)!)
+                if isStringNumber(operandString: character){
+                    operands.append(Double(character)!)
                 }
             }
         }
+        
         while !operations.isEmpty {
             operands = process(operands: operands, operation: operations.popLast()!)
         }
