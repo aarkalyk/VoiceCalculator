@@ -39,6 +39,7 @@ class MainViewController: UIViewController {
     }()
     
     private let calculator = Calculator()
+    var isRecording = false
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -72,14 +73,16 @@ class MainViewController: UIViewController {
     
     //MARK: - Button actions
     func recordButtonPressed(){
+        isRecording = true
         startRecording()
         showInstructions()
-        instructionsLabel.text = Hints.stopInstructionText
         elasticOvalView.compressView()
+        instructionsLabel.text = Hints.stopInstructionText
         elasticOvalView.expressionText = Hints.expressionRecordingText
     }
     
     func recordButtonReleased(){
+        isRecording = false
         elasticOvalView.expressionText = Hints.computingText
         instructionsLabel.text = Hints.computingInstructionText
         showInstructions()
@@ -102,6 +105,7 @@ class MainViewController: UIViewController {
                     self.instructionsLabel.text = Hints.errorInstructionText
                     self.showInstructions()
                 }
+                self.isRecording = false
                 self.recordButton.isEnabled = true
             }
         }
@@ -140,8 +144,10 @@ class MainViewController: UIViewController {
 //MARK: - ElasticOvalView delegate
 extension MainViewController: ElasticOvalViewDelegate{
     func didCollapse(elasticView: ElasticOvalView) {
-        elasticView.expressionText = Hints.expressionPlaceHolderText
-        instructionsLabel.text = Hints.recordInstructionText
-        showInstructions()
+        if !isRecording{
+            elasticView.expressionText = Hints.expressionPlaceHolderText
+            instructionsLabel.text = Hints.recordInstructionText
+            showInstructions()
+        }
     }
 }
