@@ -18,6 +18,13 @@ enum Sizes{
     static let recordButtonWidth : CGFloat = 60.0
 }
 
+enum Operations{
+    static let multiplication = "×"
+    static let division = "÷"
+    static let addition = "+"
+    static let subtraction = "-"
+}
+
 struct Hints {
     static let recordInstructionText = "Press the record button below and tell me an arithmetic problem 👇🏻"
     static let stopInstructionText = "Just release your finger when you're done ☝️"
